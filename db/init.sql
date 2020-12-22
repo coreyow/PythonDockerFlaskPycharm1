@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS tblHomesImport (
     `fldAge` INT,
     PRIMARY KEY (`id`)
 );
-INSERT INTO tblHomesImport (fldSell,fldList,fldLiving,fldRooms,fldBeds,fldBaths,fldAge) VALUES
+INSERT INTO tblHomesImport (fldSell, fldList, fldLiving, fldRooms, fldBeds, fldBaths, fldAge) VALUES
     ('142', 160, 28, 10, 5, 3,  60),
     ('175', 180, 18,  8, 4, 1,  12),
     ('129', 132, 13,  6, 3, 1,  41),
