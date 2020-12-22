@@ -1,15 +1,20 @@
-CREATE TABLE IF NOT EXISTS homes (
-    `Sell` VARCHAR(3) CHARACTER SET utf8,
-    `List` INT,
-    `Living` INT,
-    `Rooms` INT,
-    `Beds` INT,
-    `Baths` INT,
-    `Age` INT,
-    `Acres` NUMERIC(3, 2),
-    `Taxes` INT
+CREATE DATABASE homesData;
+use homesData;
+
+CREATE TABLE IF NOT EXISTS tblhomesimport (
+    `id` int AUTO_INCREMENT,
+    `fldSell` VARCHAR(3) CHARACTER SET utf8,
+    `fldList` INT,
+    `fldLiving` INT,
+    `fldRooms` INT,
+    `fldBeds` INT,
+    `fldBaths` INT,
+    `fldAge` INT,
+    `fldAcres` NUMERIC(3, 2),
+    `fldTaxes` INT
+    PRIMARY KEY (`id`)
 );
-INSERT INTO homes VALUES
+INSERT INTO tblCitiesImport (fldName,fldLat,fldLong,fldCountry,fldAbbreviation,fldCapitalStatus,fldPopulation) VALUES
     ('142', 160, 28, 10, 5, 3,  60, 0.28,  3167),
     ('175', 180, 18,  8, 4, 1,  12, 0.43,  4033),
     ('129', 132, 13,  6, 3, 1,  41, 0.33,  1471),
