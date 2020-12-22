@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+{% block content %}
+<form action="/home/new" method="POST">
+    <div class="row">
+        <div class="col">
+            <label for="fldSell">Sell</label>
+            <input id="fldSell" type="text" class="form-control" placeholder="" name="fldSell" value="{{home.fldBeds}}">
+        </div>
+        <div class="col">
+            <label for="fldBeds">Number of Beds</label>
+            <input id="fldBeds" type="text" class="form-control" placeholder="Number of Beds"
+                   name="fldBeds" value="{{home.fldBeds}}">
+        </div>
+        <div class="col">
+            <label for="fldRooms">Rooms</label>
+            <input id="fldRooms" type="text" class="form-control" placeholder="City Country" name="fldRooms" value="{{home.fldRooms}}">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <label for="fldList">List</label>
+            <input id="fldList" type="text" class="form-control" placeholder="City Latitude" name="fldList" value="{{home.fldList}}">
+        </div>
+        <div class="col">
+            <label for="fldLiving">Living</label>
+            <input id="fldLiving" type="text" class="form-control" placeholder="City Longitude" name="fldLiving" value="{{home.fldLiving}}">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <label for="fldBaths">Baths</label>
+
+            <input id="fldBaths" type="text" class="form-control" placeholder="Capital Status"
+                   name="fldBaths" value="{{home.fldBaths}}">
+        </div>
+        <div class="col">
+            <label for="fldAge">Age</label>
+            <input id="fldAge" type="text" class="form-control" placeholder="Population" name="fldAge" value="{{home.fldAge}}">
+        </div>
+    </div>
+    <button type="submit" class="btn btn-success">Create</button>
+
+</form>
+{% endblock %}
