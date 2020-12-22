@@ -1,7 +1,7 @@
 CREATE DATABASE homesData;
 use homesData;
 
-CREATE TABLE IF NOT EXISTS tblhomesimport (
+CREATE TABLE IF NOT EXISTS tblHomesImport (
     `id` int AUTO_INCREMENT,
     `fldSell` VARCHAR(3) CHARACTER SET utf8,
     `fldList` INT,
@@ -10,11 +10,9 @@ CREATE TABLE IF NOT EXISTS tblhomesimport (
     `fldBeds` INT,
     `fldBaths` INT,
     `fldAge` INT,
-    `fldAcres` NUMERIC(3, 2),
-    `fldTaxes` INT
     PRIMARY KEY (`id`)
 );
-INSERT INTO tblCitiesImport (fldName,fldLat,fldLong,fldCountry,fldAbbreviation,fldCapitalStatus,fldPopulation) VALUES
+INSERT INTO tblHomesImport (fldSell,fldList,fldLiving,fldRooms,fldBeds,fldBaths,fldAge) VALUES
     ('142', 160, 28, 10, 5, 3,  60),
     ('175', 180, 18,  8, 4, 1,  12),
     ('129', 132, 13,  6, 3, 1,  41),
