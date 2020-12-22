@@ -1,5 +1,6 @@
-#Project Description
+##Project Description
 This project is a homework assignment to teach how to get pycharm setup with Docker, Flask, MySQL
+
 ##Postman Screenshots
 #Pycharm Screenshot
 ![postman request pycharm](/Users/coreywilliams/PycharmProjects/PythonDockerFlaskPycharm1/screenshots/Screen Shot 2020-12-11 at 1.05.25 AM.png)
